@@ -14,12 +14,12 @@
   "scripts": {
     "preinstall": "bower install",
     "start": "rosid serve src/",
-    "compile": "rosid compile src/ dist/ -i '**/_*' -i '**/.bower.json' -i '**/assets/includes'"
+    "compile": "rosid compile src/ dist/ -i '**/_*' -i '**/.bower.json' -i '**/*.data.{js,json}'"
   },
   "dependencies": {
     "rosid": "^5.2.1",
-    "rosid-handler-ejs": "^5.1.0",
     "rosid-handler-js": "^7.0.0",
+    "rosid-handler-njk": "^2.1.0",
     "rosid-handler-scss": "^3.0.1"
   }
 }

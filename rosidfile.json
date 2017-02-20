@@ -1,17 +1,29 @@
 [
   {
-    "name"    : "JS",
-    "path"    : "assets/scripts/**/[^_]*.js",
-    "handler" : "rosid-handler-js"
+    "name": "JS",
+    "path": "assets/scripts/**/[^_]*.js",
+    "handler": "rosid-handler-js"
   },
   {
-    "name"    : "SCSS",
-    "path"    : "assets/styles/[^_]*.{css,scss}*",
-    "handler" : "rosid-handler-scss"
+    "name": "SCSS",
+    "path": "assets/styles/[^_]*.{css,scss}*",
+    "handler": "rosid-handler-scss"
   },
   {
-    "name"    : "EJS",
-    "path"    : "[^_]*.{html,ejs}*",
-    "handler" : "rosid-handler-ejs"
+    "name": "NJK",
+    "path": "*.{html,njk}*",
+    "handler": "rosid-handler-njk"
+  },
+  {
+    "name": "NJK Component",
+    "path": "assets/components/[^_]*/[^_]*.{html,njk}*",
+    "handler": "rosid-handler-njk",
+    "opts": {
+      "prepend": "{% extends \"../_layout/_layout.njk\" %}{% block body %}",
+      "append": "{% endblock %}",
+      "data": {
+        "root": "../../../"
+      }
+    }
   }
 ]

@@ -11,19 +11,10 @@
   },
   {
     "name": "NJK",
-    "path": "*.{html,njk}*",
-    "handler": "rosid-handler-njk"
-  },
-  {
-    "name": "NJK Component",
-    "path": "assets/components/[^_]*/[^_]*.{html,njk}*",
+    "path": "(*/*|*).{html,njk}*",
     "handler": "rosid-handler-njk",
     "opts": {
-      "prepend": "{% extends \"../_layout/_layout.njk\" %}{% block body %}",
-      "append": "{% endblock %}",
-      "data": {
-        "root": "../../../"
-      }
+      "data": "./data.json"
     }
   }
 ]

@@ -15,7 +15,7 @@ Jump-start your front-end development. Skeleton is a HTML5 Boilerplate build upo
 ## Features
 
 - Skeleton is a base for all your everyday web-projects. Jump-start your work and develop without starting from zero. Everything you need one fork away.
-- This project is powered by [Rosid](https://github.com/electerious/Rosid), a web server with just-in-time pre-processing. JS (with Babel, UglifyJS), SASS (with cssnano, Autoprefixer) and EJS can be used right out of the box.
+- This project is powered by [Rosid](https://github.com/electerious/Rosid), a web server with just-in-time pre-processing. JS (with Babel, UglifyJS), SASS (with cssnano, Autoprefixer) and Nunjucks can be used right out of the box.
 - Skeleton is just the beginning. Fork it and extend it to your own needs. The predefined structure gives you flexibility and can be modified with ease.
 
 ## Requirements
@@ -40,7 +40,7 @@ npm install
 
 ### Develop
 
-Start developing using the following command. You browser will open, wait for code-changes and live-reload instantly when you update your files. JS, SASS and EJS will be compiled on-the-fly.
+Start developing using the following command. You browser will open, wait for code-changes and live-reload instantly when you update your files. JS, SASS and Nunjucks will be compiled on-the-fly.
 
 ```sh
 npm start

@@ -14,7 +14,7 @@
     "path": "(*/*|*).{html,njk}*",
     "handler": "rosid-handler-njk",
     "opts": {
-      "data": "./data.json"
+      "data": "data.json"
     }
   }
 ]

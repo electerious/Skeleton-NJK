@@ -22,11 +22,11 @@
 
 		<hr>
 
-		<a href="#" class="btn btn--light">Test</a>
-		<a href="#" class="btn btn--dark">Test</a>
-		<a href="#" class="btn btn--green">Test</a>
-		<a href="#" class="btn btn--purple">Test</a>
-		<a href="#" class="btn btn--text">Test</a>
+		{% inject "./assets/components/button/button.njk", { color: "light", label: "Test" } %}
+		{% inject "./assets/components/button/button.njk", { color: "dark", label: "Test" } %}
+		{% inject "./assets/components/button/button.njk", { color: "green", label: "Test" } %}
+		{% inject "./assets/components/button/button.njk", { color: "purple", label: "Test" } %}
+		{% inject "./assets/components/button/button.njk", { color: "text", label: "Test" } %}
 		<button class="btn btn--text">Test</button>
 
 		<hr>

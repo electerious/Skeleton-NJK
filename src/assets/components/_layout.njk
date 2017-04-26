@@ -24,12 +24,12 @@
 
 		<!-- CSS -->
 		{% for style in styles %}
-			<link rel="stylesheet" href="{{ style }}">
+			<link rel="stylesheet" href="{{ root }}{{ style }}">
 		{% endfor %}
 
 		<!-- JS -->
 		{% for script in scripts %}
-			<script defer src="{{ script }}"></script>
+			<script defer src="{{ root }}{{ script }}"></script>
 		{% endfor %}
 
 	</head>

@@ -16,7 +16,7 @@ module.exports = [
 	},
 	{
 		name: 'NJK',
-		path: '(*/*|*).{html,njk}*',
+		path: '[^_]*.{html,njk}*',
 		handler: 'rosid-handler-njk',
 		opts: {
 			data
@@ -32,6 +32,14 @@ module.exports = [
 			data: Object.assign({}, data, {
 				root: '../../../'
 			})
+		}
+	},
+	{
+		name: 'UI',
+		path: 'ui/**/*.html*',
+		handler: 'rosid-handler-components',
+		opts: {
+			src: 'src/'
 		}
 	}
 ]

@@ -10,6 +10,8 @@ Jump-start your front-end development. Skeleton is a HTML5 Boilerplate build upo
 - [How to use](#how-to-use)
 	- [Develop](#develop)
 	- [Compile](#compile)
+	- [UI](#ui)
+- [Docker](#docker)
 - [Troubleshooting](#troubleshooting)
 
 ## Features
@@ -53,6 +55,10 @@ Ready for prime time? Export all files, compiled and prepared for your audience.
 ```sh
 npm run compile
 ```
+
+### UI
+
+Skeleton includes a UI to help you build & document web components. Start the [development server](#develop) and open `/ui/index.html` in your browser. The path to the UI can be changed in `rosidfile.js`.
 
 ## Docker
 

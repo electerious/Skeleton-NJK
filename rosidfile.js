@@ -19,7 +19,8 @@ module.exports = [
 		path: '[^_]*.{html,njk}*',
 		handler: 'rosid-handler-njk',
 		opts: {
-			data
+			src: 'src/',
+			data: 'data.json'
 		}
 	},
 	{
@@ -27,6 +28,7 @@ module.exports = [
 		path: 'assets/components/[^_]*/[^_]*.{html,njk}*',
 		handler: 'rosid-handler-njk',
 		opts: {
+			src: 'src/',
 			prepend: '{% extends "../_layout.njk" %}{% block body %}',
 			append: '{% endblock %}',
 			data: Object.assign({}, data, {

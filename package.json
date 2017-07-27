@@ -17,10 +17,10 @@
     "compile": "rosid compile src/ dist/ -i '**/_*' -i '**/.bower.json' -i '**/*.{data,config}.{js,json}'"
   },
   "dependencies": {
-    "rosid": "^7.0.2",
-    "rosid-handler-components": "^1.7.1",
-    "rosid-handler-js": "^9.0.1",
-    "rosid-handler-njk": "^4.0.0",
-    "rosid-handler-sass": "^4.0.1"
+    "rosid": "^8.0.0",
+    "rosid-handler-components": "^2.0.1",
+    "rosid-handler-js": "^10.0.0",
+    "rosid-handler-njk": "^5.0.1",
+    "rosid-handler-sass": "^5.0.1"
   }
 }

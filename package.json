@@ -13,14 +13,14 @@
   "license": "MIT",
   "scripts": {
     "preinstall": "bower install",
-    "start": "rosid serve src/ -o",
+    "start": "rosid serve src/ -o -s '/ui/index.html'",
     "compile": "rosid compile src/ dist/ -i '**/_*' -i '**/.bower.json' -i '**/*.{data,config}.{js,json}'"
   },
   "dependencies": {
-    "rosid": "^8.0.0",
-    "rosid-handler-components": "^2.0.1",
-    "rosid-handler-js": "^10.0.0",
-    "rosid-handler-njk": "^5.0.1",
-    "rosid-handler-sass": "^5.0.1"
+    "rosid": "^9.0.1",
+    "rosid-handler-components": "^3.1.2",
+    "rosid-handler-js": "^10.0.1",
+    "rosid-handler-njk": "^5.0.2",
+    "rosid-handler-sass": "^5.0.2"
   }
 }

@@ -38,7 +38,7 @@ module.exports = [
 	},
 	{
 		name: 'UI',
-		path: 'ui/**/*.html*',
+		path: 'ui/index.{html,html.json}',
 		handler: 'rosid-handler-components',
 		opts: {
 			src: 'src/'

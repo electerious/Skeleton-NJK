@@ -1,0 +1,24 @@
+[
+  {
+    "name": "JS",
+    "path": "assets/scripts/**/[^_]*.js",
+    "handler": "rosid-handler-js"
+  },
+  {
+    "name": "SASS",
+    "path": "assets/styles/[^_]*.{css,scss}*",
+    "handler": "rosid-handler-sass",
+    "opts": {
+      "in": ".scss"
+    }
+  },
+  {
+    "name": "NJK",
+    "path": "[^_]*.{html,njk}*",
+    "handler": "rosid-handler-njk",
+    "opts": {
+      "src": "src/",
+      "data": "data.json"
+    }
+  }
+]

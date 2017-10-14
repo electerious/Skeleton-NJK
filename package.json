@@ -1,6 +1,6 @@
 {
   "name": "skeleton-njk",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "A front-end template build upon Rosid",
   "private": true,
   "authors": [
@@ -8,19 +8,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/electerious/Skeleton.git"
+    "url": "https://github.com/electerious/Skeleton-NJK.git"
   },
   "license": "MIT",
   "scripts": {
-    "preinstall": "bower install",
-    "start": "rosid serve src/ -o -s '/ui/index.html'",
-    "compile": "rosid compile src/ dist/ -i '**/_*' -i '**/.bower.json' -i '**/*.{data,config}.{js,json}'"
+    "start": "rosid serve src/ -o",
+    "compile": "rosid compile src/ dist/ -i '**/_*' -i '**/assets/includes' -i '**/*.data.{js,json}'"
   },
   "dependencies": {
+    "basicgrid": "^2.0.2",
+    "normalize.css": "^7.0.0",
     "rosid": "^9.0.1",
-    "rosid-handler-components": "^3.1.2",
     "rosid-handler-js": "^10.0.1",
-    "rosid-handler-njk": "^5.0.2",
+    "rosid-handler-njk": "^5.0.3",
     "rosid-handler-sass": "^5.0.2"
   }
 }

@@ -1,4 +1,4 @@
-{% extends "./assets/components/_layout.njk" %}
+{% extends "./assets/includes/_layout.njk" %}
 
 {% block body %}
 
@@ -17,16 +17,14 @@
 		<p class="c-light">Lorem <i>ipsum</i> dolor <b>sit</b> amet.</p>
 		<p class="c-dark">Lorem <i>ipsum</i> dolor <b>sit</b> amet.</p>
 		<p class="c-green">Lorem <i>ipsum</i> dolor <b>sit</b> amet.</p>
-		<p class="c-purple">Lorem <i>ipsum</i> dolor <b>sit</b> amet.</p>
 		<p>Lorem <i>ipsum</i> dolor <b>sit</b> amet.</p>
 
 		<hr>
 
-		{% inject "assets/components/button/button.njk", { color: "light", label: "Test" } %}
-		{% inject "assets/components/button/button.njk", { color: "dark", label: "Test" } %}
-		{% inject "assets/components/button/button.njk", { color: "green", label: "Test" } %}
-		{% inject "assets/components/button/button.njk", { color: "purple", label: "Test" } %}
-		{% inject "assets/components/button/button.njk", { color: "text", label: "Test" } %}
+		<a href="#" class="btn btn--light">Test</a>
+		<a href="#" class="btn btn--dark">Test</a>
+		<a href="#" class="btn btn--green">Test</a>
+		<a href="#" class="btn btn--text">Test</a>
 		<button class="btn btn--text">Test</button>
 
 		<hr>

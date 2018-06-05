@@ -1,5 +1,7 @@
 # Skeleton
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/electerious/Skeleton-NJK.svg)](https://greenkeeper.io/)
+
 Jump-start your front-end development. Skeleton is a HTML5 Boilerplate build upon [Rosid](https://github.com/electerious/Rosid).
 
 ## Contents

@@ -1492,6 +1492,13 @@ constants-browserify@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/constants-browserify/-/constants-browserify-1.0.0.tgz#c20b96d8c617748aaf1c16021760cd27fcb8cb75"
 
+continuous-stealthy-require@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/continuous-stealthy-require/-/continuous-stealthy-require-1.0.0.tgz#0f21defcf9a0f16a47a7a5bc82b51899acbd7119"
+  integrity sha512-Gw2NbcEnIYXPByrRXvF2qSCrhsxBsjwB3F92sYKY7h/JBj0BCNLLck3cUn977UY2ZEeLzU0Xv8HNVrSXS+FCOg==
+  dependencies:
+    stealthy-require "^1.1.1"
+
 convert-source-map@^1.1.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.6.0.tgz#51b537a8c43e0f04dec1993bffcdd504e758ac20"
@@ -3586,9 +3593,10 @@ normalize-url@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.2.0.tgz#98d0948afc82829f374320f405fe9ca55a5f8567"
 
-normalize.css@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.0.tgz#14ac5e461612538a4ce9be90a7da23f86e718493"
+normalize.css@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
+  integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
 
 npm-bundled@^1.0.1:
   version "1.0.5"
@@ -3624,9 +3632,10 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nunjucks@^3.1.2:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/nunjucks/-/nunjucks-3.1.3.tgz#9a23c844af01c143a0b40f3bdd1212a9d7877260"
+nunjucks@^3.1.4:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/nunjucks/-/nunjucks-3.1.6.tgz#6e3a3420c77ceae937ae323e9e2995383d6410fb"
+  integrity sha512-aHCt5arZUqHnRNjfDBCq+fI/O3J2sxx+xZdz6mCNvwAgJVCtHM/VAv2++figjGeFyrZ1dVcJ1dCJwMxY8iYoqQ==
   dependencies:
     a-sync-waterfall "^1.0.0"
     asap "^2.0.3"
@@ -4531,6 +4540,11 @@ request@^2.87.0:
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
+require-data@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/require-data/-/require-data-1.0.0.tgz#1fb2098f49e0c23c1ecc612095bf69c4d8836aef"
+  integrity sha512-cw/0M1xEpSbbl4FLcHQph/9G0HMzT7Wnb/fzGp/P1zivO+7TNyvyvxxgx0tGzNGej0PKJgn9vdj/vFlpRPxJSg==
+
 require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
@@ -4609,13 +4623,15 @@ rosid-handler-js@^12.0.0:
     uglify-js "^3.4.9"
     uuid "^3.2.1"
 
-rosid-handler-njk@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/rosid-handler-njk/-/rosid-handler-njk-7.0.0.tgz#58aca5d9aa8a419d1d746770303cf8447744eca5"
+rosid-handler-njk@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/rosid-handler-njk/-/rosid-handler-njk-7.1.0.tgz#d5d6f5e100259310530555039776902ad42bf360"
+  integrity sha512-BC5mfA9Iyv7krJPcZhjPaFTakmJU0SRYP4+uXZ7ReqU0M3ek2jGysabQttG3Yq2YeGRbC6IMakazp9vD2fzARA==
   dependencies:
+    continuous-stealthy-require "^1.0.0"
     find-up "^3.0.0"
-    nunjucks "^3.1.2"
-    stealthy-require "^1.1.1"
+    nunjucks "^3.1.4"
+    require-data "^1.0.0"
 
 rosid-handler-sass@^6.0.2:
   version "6.0.2"
